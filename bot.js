@@ -27,9 +27,9 @@ client.on("message", async message => {
                     return message.channel.send("**للأسف لا تمتلك صلاحية `ADMINISTRATOR`**");
                 }
                     if(!args) {
-                        return message.reply("**ياورع يجب عليك كتابة كلمة او جملة لإرسال البرودكاست **");
+                        return message.reply("** يجب عليك كتابة كلمة او جملة لإرسال البرودكاست **");
                     }
-                        message.channel.send(`**يا ورع هل أنت متأكد من إرسالك البرودكاست؟ \nمحتوى البرودكاست: \`${args}\`**`).then(m => {
+                        message.channel.send(`** هل أنت متأكد من إرسالك البرودكاست؟ \nمحتوى البرودكاست: \`${args}\`**`).then(m => {
                             m.react("✅")
                             .then(() => m.react("❌"));
 
