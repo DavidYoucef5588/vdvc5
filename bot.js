@@ -29,7 +29,7 @@ client.on("message", async message => {
                     if(!args) {
                         return message.reply("**ياورع يجب عليك كتابة كلمة او جملة لإرسال البرودكاست **");
                     }
-                        message.channel.send(`**هل أنت متأكد من إرسالك البرودكاست؟\nمحتوى البرودكاست: \`${args}\`**`).then(m => {
+                        message.channel.send(`**يا ورع هل أنت متأكد من إرسالك البرودكاست؟ \nمحتوى البرودكاست: \`${args}\`**`).then(m => {
                             m.react("✅")
                             .then(() => m.react("❌"));
 
@@ -154,7 +154,7 @@ client.on("message", async message => {
             دعوة البوت لسيرفرك : ${prefix}invite
             معلومات عن السيرفر : ${prefix}server
             برودكاست للأونلاين فقط : ${prefix}bco
-            يعرض لك عدد المتبندين من سيرفرك : -{prefix}banned
+            يعرض لك عدد المتبندين من سيرفرك : ${prefix}banned
             رابط سيرفر الدعم الفني : https://discord.gg/6ccHMM
             **`);
             message.channel.sendEmbed(help); // رابط السيرفر يعود الى سيرفر CODES .
