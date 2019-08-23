@@ -155,7 +155,7 @@ client.on("message", async message => {
             معلومات عن السيرفر : ${prefix}server
             برودكاست للأونلاين فقط : ${prefix}bco
             يعرض لك عدد المتبندين من سيرفرك : ${prefix}banned
-            رابط سيرفر الدعم الفني : https://discord.gg/6ccHMM
+            رابط سيرفر الدعم الفني : https://discord.gg/y4pVAJ
             **`);
             message.channel.sendEmbed(help); // رابط السيرفر يعود الى سيرفر CODES .
     }
